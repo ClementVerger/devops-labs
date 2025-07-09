@@ -21,7 +21,7 @@ Ce dépôt contient **12 TP pratiques**, couvrant toute la chaîne DevOps : Linu
 |  Semaine 11 | GitOps ArgoCD | [tp-semaine11-gitops](./tp-semaine11-gitops/) |
 |  Semaine 12 | Alertmanager | [tp-semaine12-alertmanager](./tp-semaine12-alertmanager/) |
 
-##Structure
+## Structure
 
 Chaque TP contient :
 -  Un `README.md` dédié
