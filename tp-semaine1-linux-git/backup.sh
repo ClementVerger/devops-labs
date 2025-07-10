@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SOURCE="/home/bob/DevOps/tp-semaine1-linux-git"
-DEST="/home/bob/backup"
+DEST="/home/bob/backup/tp-semaine1-linux-git"
 DATE=$(date +"%Y%m%d%H%M%S")
 
 mkdir -p $DEST

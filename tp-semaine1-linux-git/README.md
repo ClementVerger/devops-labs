@@ -1,37 +1,77 @@
-# TP Semaine X - [Titre du module]
+# 📁 TP Semaine 1 — Fondations Linux & Git
 
-## Objectif
+## 🎯 Objectifs
 
- - Liste claire des objectifs de la semaine.
- - Ex : Automatiser un backup avec bash.
+- Installer et configurer un environnement Linux sous WSL2.
+- Maîtriser les commandes système de base sous Linux.
+- Écrire un script Bash pour sauvegarder automatiquement un dossier.
+- Automatiser l'exécution avec `cron`.
+- Versionner le travail avec Git et GitHub.
 
-## Contenu du TP
+---
 
- |Fichier  |Rôle		  |
- |script.sh| Script Bash pour XYZ |
- |docker-compose.yml | Fichier de Stack multi-conteneurs |
- | main.tf | Infra as Code Terraform |
- | etc. | etc. |
+## ⚙️ Environnement
 
-## Résultats attendu
+- **Machine physique :** Windows 10
+- **Linux :** WSL2 Ubuntu
+- **Utilisateur :** bob
+- **Dossier de travail :** `/home/bob/tp-semaine1-linux-git`
 
- - Expliquer en 1 phrase ce que fait le tp.
- - Ex : " Ce script sauvegarde automatiquement le dossier /home/devops toutes les heures et conserve les 3 dernières versions."
+---
 
-## Comment tester
+## ✅ Structure du projet
 
- 1. Lancer tel script : 'bash backup.sh'
- 2. Vérifier tel log : '/var/log/syslog'
- 3. Tester sur 'http://localhost:8080'
+```plaintext
+DevOps/
+├──	tp-semaine1-linux-git/
+│   ├── backup.sh
+│   ├── commandes.md
+│   ├── .gitignore
+backup/ (créé automatiquement par le script)
+├── tp-semaine1-linux-git/
+├──	tp-semaine2-.../
+├──	etc.../
 
-## Preuves de réussite
+---
 
- - './captures/' -> Screenshots avec nom clair :
-	- 'cron-running.png'
-	- 'docker-ps.png'
-	- 'terraformapply.png'
+## ✅ Partie 1 — Installation
 
-## Notes perso
- - Problèmes rencontrés
- - Astuces trouvées
- - Points à appronfondir
+- **Environnement :** WSL2 Ubuntu installé sous Windows 10.
+- **Utilisateur :** `bob` configuré avec droits sudo.
+- **Connexion :** Utilisation du terminal WSL intégré ou Windows Terminal.
+
+---
+
+## ✅ Partie 2 — Commandes de base
+
+Dans `/home/bob/tp-semaine1-linux-git` :
+
+### Commandes exécutées :
+
+```bash
+# Créer le dossier de travail
+mkdir ~/tp-semaine1-linux-git
+
+# Aller dans le dossier
+cd ~/tp-semaine1-linux-git
+
+# Créer un fichier texte
+echo "Bienvenue dans le TP DevOps !" > fichier_test.txt
+
+# Copier dans /tmp
+cp fichier_test.txt /tmp/
+
+# Chercher tous les .txt dans le home
+find ~ -name "*.txt"
+
+# Lister les processus
+ps aux | less
+
+# Vérifier l’espace disque
+df -h
+
+# Créer un utilisateur testuser
+sudo adduser testuser
+
+# Supprimer testuser
+sudo deluser testuser
